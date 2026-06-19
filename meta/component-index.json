@@ -1,0 +1,13 @@
+{
+  "components": [
+    {
+      "name": "Button",
+      "variant": "primary",
+      "path": "src/components/Button",
+      "contract": "src/components/Button/Button.contract.json",
+      "tokens": "src/components/Button/Button.tokens.json",
+      "implementation": "src/components/Button/Button.tsx",
+      "description": "Primary action button using token-driven styling"
+    }
+  ]
+}

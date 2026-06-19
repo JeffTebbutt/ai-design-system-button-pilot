@@ -1,0 +1,27 @@
+{
+  "color.surface.primary": [
+    "Button.primary.background"
+  ],
+  "color.on-surface.primary": [
+    "Button.primary.text"
+  ],
+  "space.large": [
+    "Button.primary.paddingX"
+  ],
+  "space.none": [
+    "Button.primary.paddingY",
+    "Button.primary.gap"
+  ],
+  "size.7xl": [
+    "Button.primary.height"
+  ],
+  "size.11xl": [
+    "Button.primary.minWidth"
+  ],
+  "shape.corner.full": [
+    "Button.primary.radius"
+  ],
+  "typography.label.large": [
+    "Button.primary.label"
+  ]
+}
