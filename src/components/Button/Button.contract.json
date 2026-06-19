@@ -27,7 +27,7 @@
     }
   },
 
-  "states": ["default", "hover", "disabled", "loading"],
+"states": ["default", "hover", "pressed", "focus", "disabled", "loading"],
 
   "tokens": {
   "background": {
@@ -54,6 +54,20 @@
   "shadow": {
     "allowed": ["box-shadow.elevation.1"]
   },
+
+  "focusOffset": {
+  "allowed": ["space.focus.offset"]
+},
+"focusRingSize": {
+  "allowed": ["size.focus.ring"]
+},
+"focusRingColor": {
+  "allowed": ["color.focus.ring"]
+},
+"focusInnerColor": {
+  "allowed": ["color.focus.inner"]
+},
+
   "height": {
     "allowed": ["size.7xl"]
   },

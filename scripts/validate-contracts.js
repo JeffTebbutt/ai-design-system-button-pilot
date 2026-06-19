@@ -16,6 +16,9 @@ const tokens = JSON.parse(
 // Extract token names
 const tokenNames = tokens.tokens.map((t) => t.name);
 
+const allowedTokens = Object.values(contract.tokens)
+  .flatMap((t) => t.allowed || []);
+
 // Validate contract tokens
 const missing = Object.values(contract.tokens)
   .flatMap((t) => t.allowed)
