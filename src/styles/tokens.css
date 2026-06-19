@@ -1,0 +1,17 @@
+:root {
+  --color-surface-primary: #1B7C53;
+  --color-on-surface-primary: #FFFFFF;
+
+  --space-none: 0px;
+  --space-large: 24px;
+
+  --size-7xl: 48px;
+  --size-11xl: 80px;
+
+  --radius-full: 1000px;
+
+  --font-family-label: "Euclid Circular A";
+  --font-size-label: 16px;
+  --font-weight-label: 500;
+  --line-height-label: 20px;
+}
