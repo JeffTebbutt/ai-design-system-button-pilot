@@ -1,0 +1,58 @@
+{
+  "name": "Button",
+  "variant": "primary",
+  "description": "Primary action button",
+
+  "props": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "onClick": {
+      "type": "function",
+      "required": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "isLoading": {
+      "type": "boolean",
+      "default": false
+    },
+    "type": {
+      "type": "enum",
+      "values": ["button", "submit", "reset"],
+      "default": "button"
+    }
+  },
+
+  "states": [
+    "default",
+    "disabled",
+    "loading"
+  ],
+
+  "tokens": {
+    "background": "color.surface.primary",
+    "text": "color.on-surface.primary",
+    "height": "size.7xl",
+    "minWidth": "size.11xl",
+    "paddingX": "space.large",
+    "paddingY": "space.none",
+    "radius": "shape.corner.full",
+    "gap": "space.none",
+    "typography": "typography.label.large"
+  },
+
+  "layout": {
+    "display": "inline-flex",
+    "alignItems": "center",
+    "justifyContent": "center"
+  },
+
+  "constraints": {
+    "noHardcodedValues": true,
+    "tokensRequired": true
+  }
+}
