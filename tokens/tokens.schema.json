@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": ["tokens"],
+  "properties": {
+    "tokens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "value", "type", "figmaRef", "usage"],
+        "properties": {
+          "name": { "type": "string" },
+          "value": {},
+          "type": { "type": "string" },
+          "figmaRef": {
+            "type": "object",
+            "required": ["fileId", "nodeId", "styleId"],
+            "properties": {
+              "fileId": { "type": "string" },
+              "nodeId": { "type": "string" },
+              "styleId": { "type": "string" }
+            }
+          },
+          "description": { "type": "string" },
+          "usage": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
