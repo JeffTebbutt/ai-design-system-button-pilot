@@ -17,9 +17,9 @@ const tokens = JSON.parse(
 const tokenNames = tokens.tokens.map((t) => t.name);
 
 // Validate contract tokens
-const missing = Object.values(contract.tokens).filter(
-  (token) => !tokenNames.includes(token)
-);
+const missing = Object.values(contract.tokens)
+  .flatMap((t) => t.allowed)
+  .filter((token) => !tokenNames.includes(token));
 
 if (missing.length > 0) {
   console.error("❌ Contract uses unknown tokens:");
