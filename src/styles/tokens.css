@@ -63,6 +63,11 @@
   box-shadow: var(--box-shadow-elevation-1);
 }
 
+.btn-primary:active:not(:disabled) {
+  background-color: var(--color-surface-primary-strong);
+  box-shadow: none;
+}
+
 /* Disabled state */
 .btn-primary:disabled {
   background-color: var(--color-surface-disabled);
