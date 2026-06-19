@@ -4,6 +4,8 @@
   --color-surface-primary-weak: #00A45F;
   --color-surface-primary-strong: #16644D;
   --color-on-surface-primary: #FFFFFF;
+--color-focus-ring: #0062D6;
+--color-focus-inner: #FFFFFF;
 
   /* Disabled colors */
 --color-surface-disabled: #A3ABB980;
@@ -12,10 +14,12 @@
   /* Spacing */
   --space-none: 0px;
   --space-large: 24px;
+    --space-focus-offset: 2px;
 
   /* Size */
   --size-7xl: 48px;
   --size-11xl: 80px;
+  --size-focus-ring: 3px;
 
   /* Radius */
   --radius-full: 1000px;
@@ -66,6 +70,19 @@
 .btn-primary:active:not(:disabled) {
   background-color: var(--color-surface-primary-strong);
   box-shadow: none;
+}
+
+.btn-primary:focus-visible {
+  outline: none;
+
+box-shadow:
+  /* 1. Inner white gap */
+  0 0 0 var(--space-focus-offset) var(--color-focus-inner),
+
+  /* 2. Outer blue ring */
+  0 0 0 calc(
+    var(--space-focus-offset) + var(--size-focus-ring)
+  ) var(--color-focus-ring);
 }
 
 /* Disabled state */
