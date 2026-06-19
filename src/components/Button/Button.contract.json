@@ -27,18 +27,20 @@
     }
   },
 
-  "states": [
-    "default",
-    "disabled",
-    "loading"
-  ],
+  "states": ["default", "hover", "disabled", "loading"],
 
   "tokens": {
   "background": {
     "allowed": ["color.surface.primary"]
   },
+  "backgroundHover": {
+    "allowed": ["color.surface.primary-weak"]
+  },
   "text": {
     "allowed": ["color.on-surface.primary"]
+  },
+  "shadow": {
+    "allowed": ["box-shadow.elevation.1"]
   },
   "height": {
     "allowed": ["size.7xl"]

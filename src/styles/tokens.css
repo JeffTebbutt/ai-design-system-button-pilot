@@ -1,17 +1,65 @@
 :root {
+  /* Colors */
   --color-surface-primary: #1B7C53;
+  --color-surface-primary-weak: #00A45F;
   --color-on-surface-primary: #FFFFFF;
 
+  /* Spacing */
   --space-none: 0px;
   --space-large: 24px;
 
+  /* Size */
   --size-7xl: 48px;
   --size-11xl: 80px;
 
+  /* Radius */
   --radius-full: 1000px;
 
+  /* Typography */
   --font-family-label: "Euclid Circular A";
   --font-size-label: 16px;
   --font-weight-label: 500;
   --line-height-label: 20px;
+
+  /* Shadow */
+  --box-shadow-elevation-1: 0px 1px 3px 1px rgba(43, 47, 56, 0.15);
+}
+
+/* Button base */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-surface-primary);
+  color: var(--color-on-surface-primary);
+
+  height: var(--size-7xl);
+  min-width: var(--size-11xl);
+
+  padding: 0 var(--space-large);
+
+  border: none;
+  border-radius: var(--radius-full);
+
+  font-family: var(--font-family-label);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-label);
+  line-height: var(--line-height-label);
+
+  gap: var(--space-none);
+
+  cursor: pointer;
+}
+
+/* Hover state */
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-surface-primary-weak);
+  box-shadow: var(--box-shadow-elevation-1);
+}
+
+/* Disabled state */
+.btn-primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
