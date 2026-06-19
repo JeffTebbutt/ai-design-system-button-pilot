@@ -34,16 +34,34 @@
   ],
 
   "tokens": {
-    "background": "color.surface.primary",
-    "text": "color.on-surface.primary",
-    "height": "size.7xl",
-    "minWidth": "size.11xl",
-    "paddingX": "space.large",
-    "paddingY": "space.none",
-    "radius": "shape.corner.full",
-    "gap": "space.none",
-    "typography": "typography.label.large"
+  "background": {
+    "allowed": ["color.surface.primary"]
   },
+  "text": {
+    "allowed": ["color.on-surface.primary"]
+  },
+  "height": {
+    "allowed": ["size.7xl"]
+  },
+  "minWidth": {
+    "allowed": ["size.11xl"]
+  },
+  "paddingX": {
+    "allowed": ["space.large"]
+  },
+  "paddingY": {
+    "allowed": ["space.none"]
+  },
+  "radius": {
+    "allowed": ["shape.corner.full"]
+  },
+  "gap": {
+    "allowed": ["space.none"]
+  },
+  "typography": {
+    "allowed": ["typography.label.large"]
+  }
+},
 
   "layout": {
     "display": "inline-flex",
