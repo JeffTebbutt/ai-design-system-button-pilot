@@ -48,7 +48,15 @@ Figma → Tokens → Contract → Component → Validation → CI
 - `/scripts/validate-tokens.js`
 - `/scripts/validate-contracts.js`
 
-Run:
+---
 
-```bash
-npm run validate
+## Token Usage Rules
+
+AI agents must NOT infer or construct token names.
+
+Only tokens explicitly defined in `/tokens/tokens.json` may be used.
+
+If a required token is missing, the agent must:
+1. Stop
+2. Propose a new token explicitly
+3. Wait for approval
