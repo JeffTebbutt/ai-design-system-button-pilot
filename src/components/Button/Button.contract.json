@@ -37,6 +37,10 @@
     "allowed": ["color.surface.primary-weak"]
   },
 
+  "backgroundPressed": {
+  "allowed": ["color.surface.primary-strong"]
+},
+
   "backgroundDisabled": {
   "allowed": ["color.surface.disabled"]
 },
