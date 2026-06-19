@@ -4,6 +4,10 @@
   --color-surface-primary-weak: #00A45F;
   --color-on-surface-primary: #FFFFFF;
 
+  /* Disabled colors */
+--color-surface-disabled: #A3ABB980;
+--color-on-surface-disabled: #5A6376;
+
   /* Spacing */
   --space-none: 0px;
   --space-large: 24px;
@@ -60,6 +64,8 @@
 
 /* Disabled state */
 .btn-primary:disabled {
+  background-color: var(--color-surface-disabled);
+  color: var(--color-on-surface-disabled);
   cursor: not-allowed;
-  opacity: 0.6;
+  box-shadow: none;
 }

@@ -36,6 +36,14 @@
   "backgroundHover": {
     "allowed": ["color.surface.primary-weak"]
   },
+
+  "backgroundDisabled": {
+  "allowed": ["color.surface.disabled"]
+},
+"textDisabled": {
+  "allowed": ["color.on-surface.disabled"]
+},
+
   "text": {
     "allowed": ["color.on-surface.primary"]
   },
