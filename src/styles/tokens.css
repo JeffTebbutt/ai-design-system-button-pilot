@@ -8,14 +8,16 @@
   --core-color-green-30: #00a45f;
   --core-color-green-15: #16644d;
   --core-color-green-10: #104d43;
---core-color-green-60: #41d592;
---core-color-green-80: #95eeb4;
---core-color-green-90: #cdfbdd;
+  --core-color-green-60: #41d592;
+  --core-color-green-80: #95eeb4;
+  --core-color-green-90: #cdfbdd;
 
---core-color-neutral-0: #000000;
+  --core-color-neutral-0: #000000;
   --core-color-neutral-100: #ffffff;
   --core-color-neutral-70: #a3abb9;
   --core-color-neutral-40: #5a6376;
+  --core-color-neutral-99: #f8f9fa;
+  --core-color-neutral-05: #1c1d22;
 
   --core-color-blue-50: #0062d6;
   --core-color-blue-70: #4b92e5;
@@ -58,6 +60,8 @@
 
   --theme-color-focus-ring: var(--core-color-blue-50);
   --theme-color-focus-inner: var(--core-color-neutral-100);
+
+  --theme-color-surface-page: var(--core-color-neutral-99);
 
 
   /* =========================
@@ -106,7 +110,10 @@
 
   --theme-color-focus-ring: var(--core-color-blue-50);
   --theme-color-focus-inner: var(--core-color-neutral-100);
+
+  --theme-color-surface-page: var(--core-color-neutral-99);
 }
+
 
 /* =========================
    Theme Override (OneNZ Dark)
@@ -124,62 +131,16 @@
 
   --theme-color-focus-ring: var(--core-color-blue-70);
   --theme-color-focus-inner: var(--core-color-neutral-0);
+
+  --theme-color-surface-page: var(--core-color-neutral-05);
 }
 
-/* Button base */
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 
-  background-color: var(--button-primary-background);
-  color: var(--button-primary-text);
+/* =========================
+   APPLY PAGE BACKGROUND
+   ========================= */
 
-  height: var(--button-primary-height);
-  min-width: var(--button-primary-min-width);
-
-  padding: 0 var(--button-primary-padding-x);
-
-  border: none;
-  border-radius: var(--button-primary-radius);
-
-  font-family: var(--core-font-family-label);
-  font-size: var(--core-font-size-label);
-  font-weight: var(--core-font-weight-label);
-  line-height: var(--core-line-height-label);
-
-  gap: var(--button-primary-gap);
-
-  cursor: pointer;
-}
-
-/* Hover state */
-.btn-primary:hover:not(:disabled) {
-  background-color: var(--button-primary-background-hover);
-  box-shadow: var(--button-primary-shadow);
-}
-
-/* Active state */
-.btn-primary:active:not(:disabled) {
-  background-color: var(--button-primary-background-pressed);
-  box-shadow: none;
-}
-
-/* Focus state */
-.btn-primary:focus-visible {
-  outline: none;
-
-  box-shadow:
-    0 0 0 var(--button-focus-offset) var(--button-focus-inner-color),
-    0 0 0 calc(
-      var(--button-focus-offset) + var(--button-focus-ring-size)
-    ) var(--button-focus-ring-color);
-}
-
-/* Disabled state */
-.btn-primary:disabled {
-  background-color: var(--button-primary-background-disabled);
-  color: var(--button-primary-text-disabled);
-  cursor: not-allowed;
-  box-shadow: none;
+body {
+  background-color: var(--theme-color-surface-page);
+  transition: background-color 0.2s ease;
 }

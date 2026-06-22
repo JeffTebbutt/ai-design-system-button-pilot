@@ -1,0 +1,52 @@
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-text);
+
+  height: var(--button-primary-height);
+  min-width: var(--button-primary-min-width);
+
+  padding: 0 var(--button-primary-padding-x);
+
+  border: none;
+  border-radius: var(--button-primary-radius);
+
+  font-family: var(--core-font-family-label);
+  font-size: var(--core-font-size-label);
+  font-weight: var(--core-font-weight-label);
+  line-height: var(--core-line-height-label);
+
+  gap: var(--button-primary-gap);
+
+  cursor: pointer;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--button-primary-background-hover);
+  box-shadow: var(--button-primary-shadow);
+}
+
+.btn-primary:active:not(:disabled) {
+  background-color: var(--button-primary-background-pressed);
+  box-shadow: none;
+}
+
+.btn-primary:focus-visible {
+  outline: none;
+
+  box-shadow:
+    0 0 0 var(--button-focus-offset) var(--button-focus-inner-color),
+    0 0 0 calc(
+      var(--button-focus-offset) + var(--button-focus-ring-size)
+    ) var(--button-focus-ring-color);
+}
+
+.btn-primary:disabled {
+  background-color: var(--button-primary-background-disabled);
+  color: var(--button-primary-text-disabled);
+  cursor: not-allowed;
+  box-shadow: none;
+}

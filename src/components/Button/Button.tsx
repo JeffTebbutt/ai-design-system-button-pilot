@@ -1,3 +1,4 @@
+import "./Button.css";
 import type { ButtonProps } from "./Button.types";
 
 export const Button: React.FC<ButtonProps> = ({
