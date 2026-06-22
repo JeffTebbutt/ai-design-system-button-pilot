@@ -1,0 +1,55 @@
+{
+  "initial": "default",
+  "states": {
+    "default": {
+      "on": {
+        "MOUSE_ENTER": "hover",
+        "FOCUS": "focus",
+        "SET_DISABLED": "disabled",
+        "SET_LOADING": "loading"
+      }
+    },
+    "hover": {
+      "on": {
+        "MOUSE_LEAVE": "default",
+        "MOUSE_DOWN": "pressed",
+        "SET_DISABLED": "disabled",
+        "SET_LOADING": "loading"
+      }
+    },
+    "pressed": {
+      "on": {
+        "MOUSE_UP": "hover",
+        "KEY_UP": "focus",
+        "MOUSE_LEAVE": "default",
+        "SET_DISABLED": "disabled",
+        "SET_LOADING": "loading"
+      }
+    },
+    "focus": {
+  "on": {
+    "BLUR": "default",
+    "MOUSE_DOWN": "pressed",
+    "KEY_DOWN": "pressed",
+    "SET_DISABLED": "disabled",
+    "SET_LOADING": "loading"
+  }
+},
+    "disabled": {
+      "meta": {
+        "blocksInteraction": true
+      },
+      "on": {
+        "SET_ENABLED": "default"
+      }
+    },
+    "loading": {
+      "meta": {
+        "blocksInteraction": true
+      },
+      "on": {
+        "SET_READY": "default"
+      }
+    }
+  }
+}
