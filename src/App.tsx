@@ -11,6 +11,15 @@ export default function App() {
         <Button label="Action" />
         <Button label="Disabled" disabled />
       </div>
+
+<div style={{ padding: 24, display: "flex", gap: 16 }}>
+  <button className="btn-primary" data-state="default">Default</button>
+  <button className="btn-primary" data-state="hover">Hover</button>
+  <button className="btn-primary" data-state="pressed">Pressed</button>
+  <button className="btn-primary" data-state="focus">Focus</button>
+  <button className="btn-primary" data-state="disabled" disabled>Disabled</button>
+  <button className="btn-primary" data-state="loading">Loading</button>
+</div>
     </div>
   );
 }
