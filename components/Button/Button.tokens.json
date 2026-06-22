@@ -1,0 +1,169 @@
+{
+  "tokens": [
+    {
+      "name": "button.primary.background",
+      "value": "{theme.color.surface.primary}",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.background"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.background.hover",
+      "value": "{theme.color.surface.primary.weak}",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.background.hover"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.background.pressed",
+      "value": "{theme.color.surface.primary.strong}",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.background.pressed"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.text",
+      "value": "{theme.color.on-surface.primary}",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.text"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.background.disabled",
+      "value": "{theme.color.surface.disabled}",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.background.disabled"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.text.disabled",
+      "value": "{theme.color.on-surface.disabled}",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.text.disabled"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.height",
+      "value": "{core.size.7xl}",
+      "type": "size",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.height"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.min.width",
+      "value": "{core.size.11xl}",
+      "type": "size",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.min.width"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.padding.x",
+      "value": "{core.space.large}",
+      "type": "space",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.padding.x"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.gap",
+      "value": "{core.space.none}",
+      "type": "space",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.gap"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.radius",
+      "value": "{core.radius.full}",
+      "type": "radius",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.radius"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.focus.offset",
+      "value": "{core.space.focus.offset}",
+      "type": "space",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.focus.offset"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.focus.ring",
+      "value": "{core.size.focus.ring}",
+      "type": "size",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.focus.ring"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.focus.color",
+      "value": "{theme.color.focus.ring}",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.focus.color"
+      },
+      "usage": ["Button"]
+    },
+    {
+      "name": "button.primary.focus.inner",
+      "value": "{theme.color.focus.inner}",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+        "nodeId": "2101:5715",
+        "styleId": "button.primary.focus.inner"
+      },
+      "usage": ["Button"]
+    }
+  ]
+}
