@@ -1,0 +1,229 @@
+{
+  "tokens": [
+    {
+      "name": "core.color.blue.50",
+      "value": "#0062d6",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-blue-50",
+        "styleId": "color-one-blue-50"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.blue.70",
+      "value": "#4b92e5",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-blue-70",
+        "styleId": "color-one-blue-70"
+      },
+      "usage": []
+    },
+
+    {
+      "name": "core.color.green.10",
+      "value": "#104d43",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-green-10",
+        "styleId": "color-one-green-10"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.green.15",
+      "value": "#16644d",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-green-15",
+        "styleId": "color-one-green-15"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.green.20",
+      "value": "#1b7c53",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-green-20",
+        "styleId": "color-one-green-20"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.green.30",
+      "value": "#00a45f",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-green-30",
+        "styleId": "color-one-green-30"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.green.60",
+      "value": "#41d592",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-green-60",
+        "styleId": "color-one-green-60"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.green.80",
+      "value": "#95eeb4",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-green-80",
+        "styleId": "color-one-green-80"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.green.90",
+      "value": "#cdfbdd",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-green-90",
+        "styleId": "color-one-green-90"
+      },
+      "usage": []
+    },
+
+    {
+      "name": "core.color.neutral.0",
+      "value": "#000000",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-neutral-0",
+        "styleId": "color-one-neutral-0"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.neutral.40",
+      "value": "#5a6376",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-neutral-40",
+        "styleId": "color-one-neutral-40"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.neutral.70",
+      "value": "#a3abb9",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-neutral-70",
+        "styleId": "color-one-neutral-70"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.color.neutral.100",
+      "value": "#ffffff",
+      "type": "color",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "color-one-neutral-100",
+        "styleId": "color-one-neutral-100"
+      },
+      "usage": []
+    },
+
+    {
+      "name": "core.space.focus.offset",
+      "value": 2,
+      "type": "space",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "space-focus-offset",
+        "styleId": "space-focus-offset"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.space.large",
+      "value": 24,
+      "type": "space",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "space-large",
+        "styleId": "space-large"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.space.none",
+      "value": 0,
+      "type": "space",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "space-none",
+        "styleId": "space-none"
+      },
+      "usage": []
+    },
+
+    {
+      "name": "core.size.7xl",
+      "value": 48,
+      "type": "size",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "size-7xl",
+        "styleId": "size-7xl"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.size.11xl",
+      "value": 80,
+      "type": "size",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "size-11xl",
+        "styleId": "size-11xl"
+      },
+      "usage": []
+    },
+    {
+      "name": "core.size.focus.ring",
+      "value": 3,
+      "type": "size",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "size.focus.ring",
+        "styleId": "size.focus.ring"
+      },
+      "usage": []
+    },
+
+    {
+      "name": "core.radius.full",
+      "value": 1000,
+      "type": "radius",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "border-radius-full",
+        "styleId": "border-radius-full"
+      },
+      "usage": []
+    }
+  ]
+}
