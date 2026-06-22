@@ -1,0 +1,4 @@
+{
+  "button.primary.background": "theme.color.surface.primary",
+  "button.primary.text": "theme.color.on-surface.primary"
+}

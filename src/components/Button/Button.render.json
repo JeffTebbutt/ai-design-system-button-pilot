@@ -1,0 +1,14 @@
+{
+  "element": "button",
+  "slots": ["label"],
+
+  "styleBindings": {
+    "background": "background",
+    "color": "text"
+  },
+
+  "attributes": {
+    "disabled": "disabled",
+    "aria-busy": "isLoading"
+  }
+}
