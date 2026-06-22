@@ -1,37 +1,129 @@
 :root {
-  /* Colors */
-  --color-surface-primary: #1B7C53;
-  --color-surface-primary-weak: #00A45F;
-  --color-surface-primary-strong: #16644D;
-  --color-on-surface-primary: #FFFFFF;
---color-focus-ring: #0062D6;
---color-focus-inner: #FFFFFF;
+  /* =========================
+     Core Tokens (source of truth)
+     ========================= */
 
-  /* Disabled colors */
---color-surface-disabled: #A3ABB980;
---color-on-surface-disabled: #5A6376BF;
+  /* Core Colors */
+  --core-color-green-20: #1b7c53;
+  --core-color-green-30: #00a45f;
+  --core-color-green-15: #16644d;
+  --core-color-green-10: #104d43;
+--core-color-green-60: #41d592;
+--core-color-green-80: #95eeb4;
+--core-color-green-90: #cdfbdd;
 
-  /* Spacing */
-  --space-none: 0px;
-  --space-large: 24px;
-    --space-focus-offset: 2px;
+--core-color-neutral-0: #000000;
+  --core-color-neutral-100: #ffffff;
+  --core-color-neutral-70: #a3abb9;
+  --core-color-neutral-40: #5a6376;
 
-  /* Size */
-  --size-7xl: 48px;
-  --size-11xl: 80px;
-  --size-focus-ring: 3px;
+  --core-color-blue-50: #0062d6;
+  --core-color-blue-70: #4b92e5;
 
-  /* Radius */
-  --radius-full: 1000px;
+  /* Core Spacing */
+  --core-space-large: 24px;
+  --core-space-none: 0px;
+  --core-space-focus-offset: 2px;
+
+  /* Core Size */
+  --core-size-7xl: 48px;
+  --core-size-11xl: 80px;
+  --core-size-focus-ring: 3px;
+
+  /* Core Radius */
+  --core-radius-full: 1000px;
 
   /* Typography */
-  --font-family-label: "Euclid Circular A";
-  --font-size-label: 16px;
-  --font-weight-label: 500;
-  --line-height-label: 20px;
+  --core-font-family-label: "Euclid Circular A";
+  --core-font-size-label: 16px;
+  --core-font-weight-label: 500;
+  --core-line-height-label: 20px;
 
   /* Shadow */
-  --box-shadow-elevation-1: 0px 1px 3px 1px rgba(43, 47, 56, 0.15);
+  --core-shadow-elevation-1: 0px 1px 3px 1px rgba(43, 47, 56, 0.15);
+
+
+  /* =========================
+     Default Theme (fallback)
+     ========================= */
+
+  --theme-color-surface-primary: var(--core-color-green-20);
+  --theme-color-surface-primary-weak: var(--core-color-green-30);
+  --theme-color-surface-primary-strong: var(--core-color-green-15);
+
+  --theme-color-on-surface-primary: var(--core-color-neutral-100);
+
+  --theme-color-surface-disabled: var(--core-color-neutral-70);
+  --theme-color-on-surface-disabled: var(--core-color-neutral-40);
+
+  --theme-color-focus-ring: var(--core-color-blue-50);
+  --theme-color-focus-inner: var(--core-color-neutral-100);
+
+
+  /* =========================
+     Component Tokens (Button)
+     ========================= */
+
+  --button-primary-background: var(--theme-color-surface-primary);
+  --button-primary-background-hover: var(--theme-color-surface-primary-weak);
+  --button-primary-background-pressed: var(--theme-color-surface-primary-strong);
+
+  --button-primary-text: var(--theme-color-on-surface-primary);
+
+  --button-primary-background-disabled: var(--theme-color-surface-disabled);
+  --button-primary-text-disabled: var(--theme-color-on-surface-disabled);
+
+  --button-primary-height: var(--core-size-7xl);
+  --button-primary-min-width: var(--core-size-11xl);
+
+  --button-primary-padding-x: var(--core-space-large);
+  --button-primary-gap: var(--core-space-none);
+
+  --button-primary-radius: var(--core-radius-full);
+
+  --button-focus-offset: var(--core-space-focus-offset);
+  --button-focus-ring-size: var(--core-size-focus-ring);
+  --button-focus-ring-color: var(--theme-color-focus-ring);
+  --button-focus-inner-color: var(--theme-color-focus-inner);
+
+  --button-primary-shadow: var(--core-shadow-elevation-1);
+}
+
+
+/* =========================
+   Theme Override (OneNZ Light)
+   ========================= */
+
+:root[data-theme="onenz-light"] {
+  --theme-color-surface-primary: var(--core-color-green-20);
+  --theme-color-surface-primary-weak: var(--core-color-green-30);
+  --theme-color-surface-primary-strong: var(--core-color-green-15);
+
+  --theme-color-on-surface-primary: var(--core-color-neutral-100);
+
+  --theme-color-surface-disabled: var(--core-color-neutral-70);
+  --theme-color-on-surface-disabled: var(--core-color-neutral-40);
+
+  --theme-color-focus-ring: var(--core-color-blue-50);
+  --theme-color-focus-inner: var(--core-color-neutral-100);
+}
+
+/* =========================
+   Theme Override (OneNZ Dark)
+   ========================= */
+
+:root[data-theme="onenz-dark"] {
+  --theme-color-surface-primary: var(--core-color-green-80);
+  --theme-color-surface-primary-weak: var(--core-color-green-90);
+  --theme-color-surface-primary-strong: var(--core-color-green-60);
+
+  --theme-color-on-surface-primary: var(--core-color-green-10);
+
+  --theme-color-surface-disabled: #ffffff3f;
+  --theme-color-on-surface-disabled: #ffffff7f;
+
+  --theme-color-focus-ring: var(--core-color-blue-70);
+  --theme-color-focus-inner: var(--core-color-neutral-0);
 }
 
 /* Button base */
@@ -40,55 +132,54 @@
   align-items: center;
   justify-content: center;
 
-  background-color: var(--color-surface-primary);
-  color: var(--color-on-surface-primary);
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-text);
 
-  height: var(--size-7xl);
-  min-width: var(--size-11xl);
+  height: var(--button-primary-height);
+  min-width: var(--button-primary-min-width);
 
-  padding: 0 var(--space-large);
+  padding: 0 var(--button-primary-padding-x);
 
   border: none;
-  border-radius: var(--radius-full);
+  border-radius: var(--button-primary-radius);
 
-  font-family: var(--font-family-label);
-  font-size: var(--font-size-label);
-  font-weight: var(--font-weight-label);
-  line-height: var(--line-height-label);
+  font-family: var(--core-font-family-label);
+  font-size: var(--core-font-size-label);
+  font-weight: var(--core-font-weight-label);
+  line-height: var(--core-line-height-label);
 
-  gap: var(--space-none);
+  gap: var(--button-primary-gap);
 
   cursor: pointer;
 }
 
 /* Hover state */
 .btn-primary:hover:not(:disabled) {
-  background-color: var(--color-surface-primary-weak);
-  box-shadow: var(--box-shadow-elevation-1);
+  background-color: var(--button-primary-background-hover);
+  box-shadow: var(--button-primary-shadow);
 }
 
+/* Active state */
 .btn-primary:active:not(:disabled) {
-  background-color: var(--color-surface-primary-strong);
+  background-color: var(--button-primary-background-pressed);
   box-shadow: none;
 }
 
+/* Focus state */
 .btn-primary:focus-visible {
   outline: none;
 
-box-shadow:
-  /* 1. Inner white gap */
-  0 0 0 var(--space-focus-offset) var(--color-focus-inner),
-
-  /* 2. Outer blue ring */
-  0 0 0 calc(
-    var(--space-focus-offset) + var(--size-focus-ring)
-  ) var(--color-focus-ring);
+  box-shadow:
+    0 0 0 var(--button-focus-offset) var(--button-focus-inner-color),
+    0 0 0 calc(
+      var(--button-focus-offset) + var(--button-focus-ring-size)
+    ) var(--button-focus-ring-color);
 }
 
 /* Disabled state */
 .btn-primary:disabled {
-  background-color: var(--color-surface-disabled);
-  color: var(--color-on-surface-disabled);
+  background-color: var(--button-primary-background-disabled);
+  color: var(--button-primary-text-disabled);
   cursor: not-allowed;
   box-shadow: none;
 }
