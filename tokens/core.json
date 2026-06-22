@@ -112,6 +112,19 @@
       },
       "usage": []
     },
+
+{
+  "name": "core.color.neutral.05",
+  "value": "#1c1d22",
+  "type": "color",
+  "figmaRef": {
+    "fileId": "global-styles",
+    "nodeId": "color-one-neutral-05",
+    "styleId": "color-one-neutral-05"
+  },
+  "usage": []
+}
+
     {
       "name": "core.color.neutral.40",
       "value": "#5a6376",
@@ -134,6 +147,19 @@
       },
       "usage": []
     },
+
+{
+  "name": "core.color.neutral.99",
+  "value": "#f8f9fa",
+  "type": "color",
+  "figmaRef": {
+    "fileId": "global-styles",
+    "nodeId": "color-one-neutral-99",
+    "styleId": "color-one-neutral-99"
+  },
+  "usage": []
+},
+
     {
       "name": "core.color.neutral.100",
       "value": "#ffffff",

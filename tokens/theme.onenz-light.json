@@ -87,6 +87,17 @@
         "styleId": "color-focus-inner"
       },
       "usage": ["button.primary.focus.inner"]
-    }
+    },
+
+    {
+  "name": "theme.onenz-light.color.surface.page",
+  "value": "{core.color.neutral.99}",
+  "type": "color",
+  "figmaRef": {
+    "fileId": "FI4aHG2kZUC2s5gATpk7I1",
+    "nodeId": "2101:5715",
+    "styleId": "colorSurfacePageDefault"
+  }
+}
   ]
 }
