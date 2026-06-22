@@ -1,0 +1,8 @@
+{
+  "component": "Button",
+  "variant": "primary",
+  "states": ["default", "hover", "pressed", "focus", "disabled", "loading"],
+  "props": {
+    "label": "Test"
+  }
+}

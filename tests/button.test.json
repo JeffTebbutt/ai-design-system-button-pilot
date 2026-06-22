@@ -1,0 +1,10 @@
+{
+  "component": "Button",
+  "variant": "primary",
+  "state": "hover",
+  "props": {
+    "label": "Continue",
+    "disabled": false,
+    "isLoading": false
+  }
+}
