@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ai-design-system-button-pilot</title>
   </head>
+
   <body>
+    <!-- React app -->
     <div id="root"></div>
+
+    <!-- TEST HARNESS -->
+
+<div id="harness"></div>
+
+<script>
+  fetch("/tests/button-harness.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("harness").innerHTML = html;
+    });
+</script>
+
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
