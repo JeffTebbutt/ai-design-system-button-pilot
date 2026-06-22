@@ -11,6 +11,7 @@
 
   padding: 0 var(--button-primary-padding-x);
 
+  outline: none;
   border: none;
   border-radius: var(--button-primary-radius);
 
@@ -24,19 +25,23 @@
   cursor: pointer;
 }
 
-.btn-primary:hover:not(:disabled) {
+.btn-primary[data-state="default"] {
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-text);
+}
+
+.btn-primary[data-state="hover"] {
   background-color: var(--button-primary-background-hover);
   box-shadow: var(--button-primary-shadow);
 }
 
-.btn-primary:active:not(:disabled) {
+.btn-primary[data-state="pressed"] {
   background-color: var(--button-primary-background-pressed);
   box-shadow: none;
 }
 
-.btn-primary:focus-visible {
+.btn-primary[data-state="focus"] {
   outline: none;
-
   box-shadow:
     0 0 0 var(--button-focus-offset) var(--button-focus-inner-color),
     0 0 0 calc(
@@ -44,9 +49,19 @@
     ) var(--button-focus-ring-color);
 }
 
-.btn-primary:disabled {
+.btn-primary[data-state="disabled"] {
   background-color: var(--button-primary-background-disabled);
   color: var(--button-primary-text-disabled);
-  cursor: not-allowed;
   box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
