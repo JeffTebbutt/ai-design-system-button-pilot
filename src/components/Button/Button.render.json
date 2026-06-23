@@ -8,6 +8,8 @@
   },
 
   "attributes": {
+    "class": "btn-{variant}",
+    "data-state": "{state}",
     "disabled": "disabled",
     "aria-busy": "isLoading"
   }
