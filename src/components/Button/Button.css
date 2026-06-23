@@ -1,4 +1,11 @@
 .btn-primary {
+    /* Reset browser defaults */
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+
+  
   display: inline-flex;
   align-items: center;
   justify-content: center;
