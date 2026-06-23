@@ -75,10 +75,10 @@ const buttons = states.map((state) =>
     variant: input.variant,
     state,
     props: {
-      label: input.props.label,
-      disabled: state === "disabled",
-      isLoading: state === "loading"
-    }
+  label: state.charAt(0).toUpperCase() + state.slice(1),
+  disabled: state === "disabled",
+  isLoading: state === "loading"
+}
   })
 );
 
@@ -86,8 +86,21 @@ const html = `
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="/src/styles/tokens.css">
-    <link rel="stylesheet" href="/src/components/Button/Button.css">
+    <!-- Add this -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/euclid.css">
+    <link rel="stylesheet" href="/styles/tokens.css">
+    <link rel="stylesheet" href="/components/Button.css">
+    
+    <!-- Add this -->
+<style>
+  html, body {
+    font-family: "Euclid Circular A", system-ui, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
   </head>
   <body>
     <div style="padding:24px; display:flex; gap:16px; flex-wrap:wrap;">
