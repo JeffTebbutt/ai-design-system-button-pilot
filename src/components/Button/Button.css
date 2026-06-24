@@ -39,7 +39,7 @@
 
 .btn-primary[data-state="hover"] {
   background-color: var(--button-primary-background-hover);
-  box-shadow: var(--button-primary-shadow);
+  box-shadow: var(--button-shadow);
 }
 
 .btn-primary[data-state="pressed"] {
