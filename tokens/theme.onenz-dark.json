@@ -1,7 +1,7 @@
 {
   "tokens": [
     {
-      "name": "theme.onenz-dark.color.surface.primary",
+      "name": "theme.color.surface.primary",
       "value": "{core.color.green.80}",
       "type": "color",
       "figmaRef": {
@@ -11,7 +11,7 @@
       }
     },
     {
-      "name": "theme.onenz-dark.color.surface.primary.weak",
+      "name": "theme.color.surface.primary.weak",
       "value": "{core.color.green.90}",
       "type": "color",
       "figmaRef": {
@@ -21,7 +21,7 @@
       }
     },
     {
-      "name": "theme.onenz-dark.color.surface.primary.strong",
+      "name": "theme.color.surface.primary.strong",
       "value": "{core.color.green.60}",
       "type": "color",
       "figmaRef": {
@@ -32,7 +32,7 @@
     },
 
     {
-      "name": "theme.onenz-dark.color.on-surface.primary",
+      "name": "theme.color.on-surface.primary",
       "value": "{core.color.green.10}",
       "type": "color",
       "figmaRef": {
@@ -43,7 +43,7 @@
     },
 
     {
-      "name": "theme.onenz-dark.color.surface.disabled",
+      "name": "theme.color.surface.disabled",
       "value": "#ffffff3f",
       "type": "color",
       "figmaRef": {
@@ -53,7 +53,7 @@
       }
     },
     {
-      "name": "theme.onenz-dark.color.on-surface.disabled",
+      "name": "theme.color.on-surface.disabled",
       "value": "#ffffff7f",
       "type": "color",
       "figmaRef": {
@@ -64,7 +64,7 @@
     },
 
     {
-      "name": "theme.onenz-dark.color.focus.ring",
+      "name": "theme.color.focus.ring",
       "value": "{core.color.blue.70}",
       "type": "color",
       "figmaRef": {
@@ -74,7 +74,7 @@
       }
     },
     {
-  "name": "theme.onenz-dark.color.focus.inner",
+  "name": "theme.color.focus.inner",
   "value": "{core.color.neutral.0}",
   "type": "color",
   "figmaRef": {
@@ -85,7 +85,7 @@
 },
 
 {
-  "name": "theme.onenz-dark.color.surface.page",
+  "name": "theme.color.surface.page",
   "value": "{core.color.neutral.05}",
   "type": "color",
   "figmaRef": {

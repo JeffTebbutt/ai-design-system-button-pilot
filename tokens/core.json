@@ -125,6 +125,18 @@
   "usage": []
 },
 
+{
+  "name": "core.color.neutral.10",
+  "value": "#2b2f38",
+  "type": "color",
+  "figmaRef": {
+    "fileId": "global-styles",
+    "nodeId": "color-one-neutral-10",
+    "styleId": "color-one-neutral-10"
+  },
+  "usage": []
+},
+
     {
       "name": "core.color.neutral.40",
       "value": "#5a6376",
@@ -168,6 +180,30 @@
         "fileId": "global-styles",
         "nodeId": "color-one-neutral-100",
         "styleId": "color-one-neutral-100"
+      },
+      "usage": []
+    },
+
+    {
+      "name": "core.box-shadow.opacity.15",
+      "value": "0.15",
+      "type": "number",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "box-shadow-opacity-15",
+        "styleId": "box-shadow-opacity-15"
+      },
+      "usage": []
+    },
+
+    {
+      "name": "core.box-shadow.opacity.30",
+      "value": "0.3",
+      "type": "number",
+      "figmaRef": {
+        "fileId": "global-styles",
+        "nodeId": "box-shadow-opacity-30",
+        "styleId": "box-shadow-opacity-30"
       },
       "usage": []
     },

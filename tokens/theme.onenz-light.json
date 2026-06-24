@@ -1,7 +1,7 @@
 {
   "tokens": [
     {
-      "name": "theme.onenz-light.color.surface.primary",
+      "name": "theme.color.surface.primary",
       "value": "{core.color.green.20}",
       "type": "color",
       "figmaRef": {
@@ -12,7 +12,7 @@
       "usage": ["button.primary.background"]
     },
     {
-      "name": "theme.onenz-light.color.surface.primary.weak",
+      "name": "theme.color.surface.primary.weak",
       "value": "{core.color.green.30}",
       "type": "color",
       "figmaRef": {
@@ -23,7 +23,7 @@
       "usage": ["button.primary.background.hover"]
     },
     {
-      "name": "theme.onenz-light.color.surface.primary.strong",
+      "name": "theme.color.surface.primary.strong",
       "value": "{core.color.green.15}",
       "type": "color",
       "figmaRef": {
@@ -34,7 +34,7 @@
       "usage": ["button.primary.background.pressed"]
     },
     {
-      "name": "theme.onenz-light.color.on-surface.primary",
+      "name": "theme.color.on-surface.primary",
       "value": "{core.color.neutral.100}",
       "type": "color",
       "figmaRef": {
@@ -45,7 +45,7 @@
       "usage": ["button.primary.text"]
     },
     {
-      "name": "theme.onenz-light.color.surface.disabled",
+      "name": "theme.color.surface.disabled",
       "value": "{core.color.neutral.70}",
       "type": "color",
       "figmaRef": {
@@ -56,7 +56,7 @@
       "usage": ["button.primary.background.disabled"]
     },
     {
-      "name": "theme.onenz-light.color.on-surface.disabled",
+      "name": "theme.color.on-surface.disabled",
       "value": "{core.color.neutral.40}",
       "type": "color",
       "figmaRef": {
@@ -67,7 +67,7 @@
       "usage": ["button.primary.text.disabled"]
     },
     {
-      "name": "theme.onenz-light.color.focus.ring",
+      "name": "theme.color.focus.ring",
       "value": "{core.color.blue.50}",
       "type": "color",
       "figmaRef": {
@@ -78,7 +78,7 @@
       "usage": ["button.primary.focus.ring"]
     },
     {
-      "name": "theme.onenz-light.color.focus.inner",
+      "name": "theme.color.focus.inner",
       "value": "{core.color.neutral.100}",
       "type": "color",
       "figmaRef": {
@@ -90,7 +90,7 @@
     },
 
     {
-  "name": "theme.onenz-light.color.surface.page",
+  "name": "theme.color.surface.page",
   "value": "{core.color.neutral.99}",
   "type": "color",
   "figmaRef": {
