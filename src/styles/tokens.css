@@ -13,9 +13,12 @@
   --core-color-green-90: #cdfbdd;
 
   --core-color-neutral-0: #000000;
-  --core-color-neutral-100: #ffffff;
-  --core-color-neutral-70: #a3abb9;
+  --core-color-neutral-10: 43, 47, 56;
   --core-color-neutral-40: #5a6376;
+  --core-color-neutral-70: #a3abb9;
+  --core-color-neutral-100: #ffffff;
+  
+  
   --core-color-neutral-99: #f8f9fa;
   --core-color-neutral-05: #1c1d22;
 
@@ -42,7 +45,8 @@
   --core-line-height-label: 20px;
 
   /* Shadow */
-  --core-shadow-elevation-1: 0px 1px 3px 1px rgba(43, 47, 56, 0.15);
+  --core-box-shadow-opacity-30: 0.3;
+--core-box-shadow-opacity-15: 0.15;
 
 
   /* =========================
@@ -90,7 +94,7 @@
   --button-focus-ring-color: var(--theme-color-focus-ring);
   --button-focus-inner-color: var(--theme-color-focus-inner);
 
-  --button-primary-shadow: var(--core-shadow-elevation-1);
+  --button-shadow: var(--core-shadow-elevation-1);
 }
 
 
