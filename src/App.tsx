@@ -18,7 +18,7 @@ export default function App() {
   <button className="btn-primary" data-state="pressed">Pressed</button>
   <button className="btn-primary" data-state="focus">Focus</button>
   <button className="btn-primary" data-state="disabled" disabled>Disabled</button>
-  <button className="btn-primary" data-state="loading">Loading</button>
+  <button className="btn-primary" data-state="loading">Loading…</button>
 </div>
     </div>
   );

@@ -37,11 +37,6 @@
   color: var(--button-primary-text);
 }
 
-.btn-primary[data-state="hover"] {
-  background-color: var(--button-primary-background-hover);
-  box-shadow: var(--button-shadow);
-}
-
 .btn-primary[data-state="pressed"] {
   background-color: var(--button-primary-background-pressed);
   box-shadow: none;
@@ -71,4 +66,10 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+
+.btn-primary[data-state="hover"] {
+  background-color: var(--button-primary-background-hover);
+  box-shadow: var(--button-shadow);
 }

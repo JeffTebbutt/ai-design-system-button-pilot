@@ -9,8 +9,6 @@ import tokenDefinitionsRaw from "../../../tokens/tokens.json";
 import componentMap from "../../../tokens/component-map.json";
 import componentTokens from "./Button.tokens.json";
 
-// 👇 ADD TYPES HERE
-
 type ButtonState =
   | "default"
   | "hover"
@@ -78,12 +76,16 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   disabled = false,
   isLoading = false,
-  type = "button"
-}) => {
-const { state, send } = useStateMachine(machine) as {
+  type = "button",
+  state: externalState
+  }) => {
+  
+const { state: internalState, send } = useStateMachine(machine) as {
   state: ButtonState;
   send: (event: string) => void;
 };
+
+const state = externalState ?? internalState;
 
   useEffect(() => {
     if (isLoading) {
@@ -106,7 +108,6 @@ const { state, send } = useStateMachine(machine) as {
   const styles = useMemo(() => {
     const s: React.CSSProperties = {};
 
-   // Background
 // Background
 const bgToken =
   getToken(tokens.background, state, tokens.background.default) ??
