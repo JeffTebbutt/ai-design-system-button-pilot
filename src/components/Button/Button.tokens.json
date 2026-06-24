@@ -1,4 +1,17 @@
 {
-  "button.primary.background": "theme.color.surface.primary",
-  "button.primary.text": "theme.color.on-surface.primary"
+  "background": {
+    "default": "button.background.default",
+    "hover": "button.background.hover",
+    "pressed": "button.background.pressed",
+    "disabled": "button.background.disabled"
+  },
+  "text": {
+    "default": "button.text.default",
+    "disabled": "button.text.disabled"
+  },
+  "shadow": {
+    "hover": "button.shadow.hover",
+    "pressed": "button.shadow.pressed",
+    "focus": "button.shadow.focus"
+  }
 }
