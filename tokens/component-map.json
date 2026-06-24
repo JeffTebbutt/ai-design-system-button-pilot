@@ -1,0 +1,13 @@
+{
+  "button.background.default": "color.surface.primary",
+  "button.background.hover": "color.surface.primary-weak",
+  "button.background.pressed": "color.surface.primary-strong",
+  "button.background.disabled": "color.surface.disabled",
+
+  "button.text.default": "color.on-surface.primary",
+  "button.text.disabled": "color.on-surface.disabled",
+  
+  "button.shadow.hover": "box-shadow.elevation.1",
+  "button.shadow.pressed": "shadow.none",
+  "button.shadow.focus": "box-shadow.focus"
+}
