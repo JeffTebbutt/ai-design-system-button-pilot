@@ -1,13 +1,28 @@
 {
   "name": "ai-design-system-button-pilot",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "private": false,
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -p tsconfig.app.json && vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "validate:tokens": "node scripts/validate-tokens.js",
+    "validate:contracts": "node scripts/validate-contracts.js",
+    "validate": "npm run validate:tokens && npm run validate:contracts"
   },
   "dependencies": {
     "react": "^19.2.6",
@@ -27,14 +42,7 @@
     "globals": "^17.6.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
-  },
-  "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "validate:tokens": "node scripts/validate-tokens.js",
-  "validate:contracts": "node scripts/validate-contracts.js",
-  "validate": "npm run validate:tokens && npm run validate:contracts"
-}
+    "vite": "^8.0.12",
+    "vite-plugin-dts": "^5.0.3"
+  }
 }
